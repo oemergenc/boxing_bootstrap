@@ -63,3 +63,10 @@
     border-bottom-style: solid;
     border-bottom-width: 5px;
 }
+
+.club-img-bg {
+    background-image: url('../img/der_club.png');
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
