@@ -41,9 +41,9 @@
     background-color: #c93d34;
     content: "";
     display: inline-block;
-    height: 5px;
+    height: 7px;
     position: relative;
-    vertical-align: middle;
+    vertical-align: bottom;
     width: 50%;
 }
 
@@ -61,7 +61,18 @@
     padding: 0px;
     border-color: red red #c93d34;
     border-bottom-style: solid;
-    border-bottom-width: 5px;
+    border-bottom-width: 7px;
+}
+
+.myborder-top {
+    padding-top: 7px;
+    border-color: #c93d34;
+    border-top-style: solid;
+    border-top-width: 7px;
+}
+
+.myblock h1 {
+    padding: 0px;
 }
 
 .club-img-bg {
@@ -69,4 +80,27 @@
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 175px;
+    text-align: center;
+    background-color: #c93d34;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
