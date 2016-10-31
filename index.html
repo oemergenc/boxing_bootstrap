@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>Boostrap 4 - Tutorial</title>
+    <title>Homepage des Boxclub der Westen</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="author" content="Sam Norton">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Oemer Genc">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
@@ -23,36 +22,78 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-fixed-top navbar-dark" style="background:rgba(0,0,0,0.5);">
+<!--
+<nav class="navbar navbar-fixed-top navbar-brand" style="background-color:rgba(0,0,0,.5);height: 100px">
     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-toggleable-md text-xs-center" id="navbarResponsive">
-        <ul class="nav navbar-nav text-uppercase font-weight-bold">
-            <li class="nav-item">
+        <ul class="nav navbar-nav text-uppercase font-weight-bold" style="width: 1000px;">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">Start</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">Der Club</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">Tarife</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">Kurse</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">Trainer</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">Gallery</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item semi-transparent-button">
                 <a class="nav-link" href="#">News</a>
             </li>
         </ul>
     </div>
 </nav>
+-->
 
+<nav class="navbar navbar-fixed-top navbar-dark" style="background-color:rgba(0,0,0,.5); height: 100px">
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="container collapse navbar-toggleable-md" id="navbarResponsive">
+        <div class="row">
+            <div class="col-lg-2 hidden-lg-down">
+                <img class="ml-0" src="img/logo_trans.png" style="width: 150px; height: 150px;">
+            </div>
+            <div class="col-lg-8">
+                <form class="form-inline">
+                    <div class="row hidden-lg-down" style="height: 50px">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn semi-transparent-button text-uppercase" type="button">Start</button>
+                            <button class="btn semi-transparent-button text-uppercase" type="button">Club</button>
+                            <button class="btn semi-transparent-button text-uppercase" type="button">Kurse</button>
+                            <button class="btn semi-transparent-button text-uppercase" type="button">Tarife</button>
+                            <button class="btn semi-transparent-button text-uppercase" type="button">Trainer</button>
+                            <button class="btn semi-transparent-button text-uppercase" type="button">Gallery</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2 hidden-lg-down">
+                <div class="row">
+                    <div class="col-lg-12 pt-1">
+                        <h6 class="small" style="color: white">Anmelden</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button class="btn anmelden-button" type="button">0221/611 415</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
 <!--Start Page-->
 <div class="jumbotron vertical-center" style="background-image: url(img/cover.png);">
@@ -83,10 +124,15 @@
             Mittelrheinmeister und langjährige Mitglied der Nationalmannschaft HANS MERTENS, der uns bis heute als
             engagierter Trainer treugeblieben ist.</p>
     </div>
-    <div style="position: relative">
-        <div class="club-img-bg text-xs-center" style="height: 600px;">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-4 p-0">
+            <img class="img-fluid float-lg-right" style="width: 100%;" src="img/der_club.png">
         </div>
     </div>
+    <!--<div style="position: relative">
+        <div class="club-img-bg text-xs-center">
+        </div>
+    </div>-->
 </div>
 
 <!--Tarife-->
@@ -95,9 +141,11 @@
         <div class="col-lg-3 offset-lg-6 hidden-lg-down"
              style="background-color: #c93d34; height:50px;margin-top: -50px">
         </div>
-        <div class="col-lg-6" style="background-color: #8c8c8c; margin-top: 250px;">
-            <div class="row" style="padding: 15px">
-                <div class="col-lg-4 offset-lg-8 text-xs-left small" style="color: white; padding-bottom: 15px;"> Hier
+        <div class="col-lg-6">
+            <div class="row hidden-lg-down" style="height: 250px">
+            </div>
+            <div class="row" style="padding: 15px;background-color: #8c8c8c;">
+                <div class="col-lg-4 offset-lg-8 text-xs-left small" style="color: white; padding-bottom: 15px;">Hier
                     klicken und Beitrittsformular runterladen und ausgefüllt an uns zurück schicken oder einfach
                     vorbeibrigen.
                 </div>
@@ -105,23 +153,37 @@
                      style="background-color: darkgrey;  padding-bottom: 5px;">
                     <u>Beitrittsformular Runterladen</u>
                 </div>
-                <div class="col-lg-4" style="height: 50px">
+                <div class="col-lg-4 hidden-lg-down" style="height: 50px">
                 </div>
             </div>
         </div>
         <div class="col-lg-3"
-             style="background-color: #c93d34; padding-top: 50px; padding-bottom: 100px; z-index: 10;">
-            <div class="card text-xs-left mycard" style="color: white;">
-                <div class="card-block">
-                    <h4 class="card-title text-xs-center display-3 font-weight-bold text-uppercase">Tarife</h4>
-                    <p class="card-text small">Entscheide selbst, bei welchem Kurs du teilnehmen willst! Komm zum
-                        Probetraining und verschaff dir einen ersten Eindruck welcherTarif deinem Typ entspricht.
-                        Schreib uns einfach eine Email an: boxclubwesten@gmail.de oder ruf uns an unter: 0221/611 415
-                        und vereinbare einen Termin mit einem unsere Trainer.</p>
-                    <p class="font-weight-bold"><br>
-                        ERFAHRE MEHR ÜBER<br>
-                        UNSERE TARIFE<br>
-                        UND KOMM VORBEI.</p>
+             style="background-color: #c93d34; z-index: 10;">
+            <div class="row">
+                <div class="col-lg-12 hidden-lg-down" style="height: 25px">
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="card text-xs-left mycard" style="color: white;">
+                        <div class="card-block">
+                            <h4 class="card-title text-xs-center display-3 font-weight-bold text-uppercase">Tarife</h4>
+                            <p class="card-text small">Entscheide selbst, bei welchem Kurs du teilnehmen willst! Komm
+                                zum
+                                Probetraining und verschaff dir einen ersten Eindruck welcherTarif deinem Typ
+                                entspricht.
+                                Schreib uns einfach eine Email an: boxclubwesten@gmail.de oder ruf uns an unter:
+                                0221/611
+                                415
+                                und vereinbare einen Termin mit einem unsere Trainer.</p>
+                            <p class="font-weight-bold"><br>
+                                ERFAHRE MEHR ÜBER<br>
+                                UNSERE TARIFE<br>
+                                UND KOMM VORBEI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 hidden-lg-down" style="height: 125px">
+
                 </div>
             </div>
         </div>
@@ -178,11 +240,12 @@
 <div class="container-fluid" style="background-color: black; color: white;">
     <div class="container text-xs-center pt-3">
         <h1 class="font-weight-bold text-uppercase display-3 pb-3">Trainer</h1>
-        <div class="card-block myblock myborder-top" style="line-height: 56px">
-            <p class="lead font-weight-bold display-4">
+        <div class="card-block myblock myborder-top">
+            <p class="lead text-uppercase font-weight-bold display-4" style="line-height: 56px">
                 >He who is not courageous enough to take risks will accomplish nothing in life<
             </p>
-            <footer class="blockquote-footer" style="color: white;">(Wer nicht mutig genug ist, Risiken einzugehen, wird
+            <footer class="blockquote-footer" style="color: white; line-height: 18px">(Wer nicht mutig genug ist,
+                Risiken einzugehen, wird
                 es im Leben zu nichts bringen.) <cite title="Source Title">Muhammed Ali</cite></footer>
         </div>
     </div>
@@ -275,8 +338,114 @@
 
 <!-- News -->
 <div class="container-fluid" style="background-color: white; color: black;">
-    <div class="container text-xs-center pt-3">
-        <h1 class="font-weight-bold text-uppercase display-3 pb-3">Gallery</h1>
+    <div class="row">
+        <div class="col-lg-5 col-md-12 p-1" style="background-color: darkgrey;">
+            <div class="col-lg-12 hidden-md-down" style="height: 150px">
+
+            </div>
+            <div class="col-lg-12">
+                <h1 class="display-1 text-xs-center text-lg-right text-uppercase">News</h1>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-12" style="background-color: black; color: white;">
+            <div class="news-text p-1">
+                <h6>30.08.2015</h6>
+                <h4> Sichtung-Turnier in Alsdorf </h4>
+                <h6>30.08.2015</h6>
+                <h4> Sichtung-Turnier in Alsdorf </h4>
+                <h6>30.08.2015</h6>
+                <h4> Sichtung-Turnier in Alsdorf </h4>
+                <h6>30.08.2015</h6>
+                <h4> Sichtung-Turnier in Alsdorf </h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 m-1 float-xs-right text-xs-right">
+            <h4>0221/611 415</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 hidden-md-down">
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="container-fluid text-xs-center">
+                <div class="card-block myblock" style="border-bottom-style: none;">
+                    <p class="lead text-uppercase font-weight-bold display-4" style="line-height: 56px">
+                        >If my mind can conceive it and my heart can believe it - then I can achieve it<
+                    </p>
+                    <footer class="blockquote-footer" style="color: black; line-height: 18px">(Wenn mein Kopf es sich
+                        ausdenken kann, wenn mein Herz daran glauben kann - dann kann ich es auch erreichen.) <cite
+                                title="Source Title">Muhammed Ali</cite></footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 float-xs-right m-1 p-1 text-xs-center text-uppercase"
+             style="background-color: darkgrey; color: white">
+            <h6>Mitglied werden</h6>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid" style="background-color: black; color: white;">
+    <div class="row pt-2">
+        <div class="col-lg-3 col-md-1 hidden-md-down">
+        </div>
+        <div class="col-lg-2">
+            <div class="card text-xs-left mycard" style="color: white;">
+                <div class="card-block  text-lg-left text-md-center">
+                    <h6 class="card-title">Weitersagen und Unterstützen</h6>
+                    Goolge<br>
+                    Goolge<br>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="card text-xs-left mycard" style="color: white;">
+                <div class="card-block text-lg-left text-md-center">
+                    <h6 class="card-title">Kontakt</h6>
+                    Box-Club Westen Köln e.V. <br>
+                    Iltisstrasse 148<br>
+                    50825 Köln<br><br>
+                    Tel. 0221 611 415<br><br>
+                    Email: boxclubwesten@gmail.com<br>
+                    Web: www.box-club-westen-koeln.de<br>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2" style="color: white;">
+            <div class="card text-xs-left mycard" style="color: white;">
+                <div class="card-block text-lg-left text-md-center">
+                    <h6 class="card-title">Schreib Uns</h6>
+                    <form>
+                        <div class="form-group">
+                            <label for="nameField">Name</label>
+                            <input type="text" class="form-control" id="nameField" placeholder="Dein Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAdressField">Email Adresse</label>
+                            <input type="email" class="form-control" id="emailAdressField"
+                                   aria-describedby="emailHelp" placeholder="Deine Email Adresse">
+                        </div>
+                        <div class="form-group">
+                            <label for="messageArea">Nachricht</label>
+                            <textarea class="form-control" id="messageArea" rows="3"
+                                      placeholder="Deine Nachricht"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 hidden-md-down">
+        </div>
+    </div>
+    <div class="row pt-1" style="background-color: #bd4147">
+        <div class="col-lg-6 offset-lg-1" style="height: 50px;">
+            ©boxclub der westen e.V • Impressum • Kontakt
+        </div>
     </div>
 </div>
 

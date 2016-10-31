@@ -1,7 +1,11 @@
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
-    vertical-align: top;
+    vertical-align: bottom;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: blue;
 }
 
 .jumbotron {
@@ -94,13 +98,58 @@
 
 /* centered columns styles */
 .row-centered {
-    text-align:center;
+    text-align: center;
 }
+
 .col-centered {
-    display:inline-block;
-    float:none;
+    display: inline-block;
+    float: none;
     /* reset the text-align */
-    text-align:left;
+    text-align: left;
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right: -4px;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.semi-transparent-button {
+    max-width: 130px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+    font-size: 16pt;
+}
+
+.anmelden-button {
+    max-width: 250px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+    font-size: 16pt;
+}
+
+.semi-transparent-button:hover,
+.semi-transparent-button:active {
+    background: #fff;
+    color: #000 !important;
+    transition: all 0.5s ease-in;
+}
+
+.semi-transparent:focus {
+    outline: none;
 }
