@@ -21,9 +21,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+
 <!-- Navigation -->
-<!--
-<nav class="navbar navbar-fixed-top navbar-brand" style="background-color:rgba(0,0,0,.5);height: 100px">
+<div class="container-fluid">
+    <nav class="navbar navbar-fixed-top" style="background-color:rgba(0,0,0,.5);">
+        <button class="navbar-toggler navbar-dark hidden-lg-up" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="row-centered row hidden-lg-down" style="height: 50px">
+            <div class="col-lg-5 offset-lg-3">
+            </div>
+            <div class="col-lg-1 pt-1" style="color: white">
+                <div class="float-lg-left small">Anmelden</div>
+            </div>
+        </div>
+        <div class="row row-centered collapse navbar-toggleable-md text-xs-center" id="navbarResponsive">
+            <div class="col-md-8">
+                <ul class="nav navbar-nav text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link semi-transparent-button" href="#">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semi-transparent-button" href="#">Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semi-transparent-button" href="#">Tarife</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semi-transparent-button" href="#">Kurse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semi-transparent-button" href="#">Trainer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semi-transparent-button" href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 hidden-lg-down text-uppercase">
+                <div class="anmelden-button float-lg-left">0221/611 415</div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--<nav class="navbar navbar-fixed-top navbar-brand" style="background-color:rgba(0,0,0,.5);height: 100px">
     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-toggleable-md text-xs-center" id="navbarResponsive">
@@ -51,49 +92,7 @@
             </li>
         </ul>
     </div>
-</nav>
--->
-
-<nav class="navbar navbar-fixed-top navbar-dark" style="background-color:rgba(0,0,0,.5); height: 100px">
-    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="container collapse navbar-toggleable-md" id="navbarResponsive">
-        <div class="row">
-            <div class="col-lg-2 hidden-lg-down">
-                <img class="ml-0" src="img/logo_trans.png" style="width: 150px; height: 150px;">
-            </div>
-            <div class="col-lg-8">
-                <form class="form-inline">
-                    <div class="row hidden-lg-down" style="height: 50px">
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <button class="btn semi-transparent-button text-uppercase" type="button">Start</button>
-                            <button class="btn semi-transparent-button text-uppercase" type="button">Club</button>
-                            <button class="btn semi-transparent-button text-uppercase" type="button">Kurse</button>
-                            <button class="btn semi-transparent-button text-uppercase" type="button">Tarife</button>
-                            <button class="btn semi-transparent-button text-uppercase" type="button">Trainer</button>
-                            <button class="btn semi-transparent-button text-uppercase" type="button">Gallery</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-2 hidden-lg-down">
-                <div class="row">
-                    <div class="col-lg-12 pt-1">
-                        <h6 class="small" style="color: white">Anmelden</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <button class="btn anmelden-button" type="button">0221/611 415</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
+</nav>-->
 
 <!--Start Page-->
 <div class="jumbotron vertical-center" style="background-image: url(img/cover.png);">
@@ -449,12 +448,10 @@
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- JavaScripts -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/tether.min.js"></script>
 
 </body>
-
 </html>
